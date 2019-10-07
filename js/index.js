@@ -106,9 +106,14 @@ $(function () {
             tracker.pickPosition(function (position, lonLat) {
             });
         });
-        $("#disMeasure").click(function () {
+        $("#spaceDisMeasure").click(function () {
             flag = 0;
-            tracker.pickDistance(function (positions, rlt) {
+            tracker.pickSpaceDistance(function (positions, rlt) {
+            });
+        });
+        $("#stickDisMeasure").click(function () {
+            flag = 0;
+            tracker.pickStickDistance(function (positions, rlt) {
             });
         });
         $("#areaMeasure").click(function () {
